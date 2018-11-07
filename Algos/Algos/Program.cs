@@ -17,25 +17,26 @@ namespace Algos
 
       #region  SearchAlgos
 
-      Console.WriteLine("Enter the element to be searched");
-      int valueToSearch=Convert.ToInt32(Console.ReadLine());
+      ////get value to be searched as input from user 
+      //Console.WriteLine("Enter the element to be searched");
+      //int valueToSearch=Convert.ToInt32(Console.ReadLine());
 
-      #region BinarySearch
+      //#region BinarySearch
 
-      //To perform a binary search the input array must be sorted.So Sorting 
-      BubbleSort bubbleSort = new BubbleSort(inputArrayWithoutDuplicates);
-      int[] sortedArray = bubbleSort.BubbleSortElements();
-      
-      BinarySearch binarySearch=new BinarySearch(sortedArray);
-      int resultIndex = binarySearch.BinarySearchValue(valueToSearch);
-      PrintArrayElements(sortedArray);
+      ////To perform a binary search the input array must be sorted.So Sorting 
+      //BubbleSort bubbleSort = new BubbleSort(inputArrayWithoutDuplicates);
+      //int[] sortedArray = bubbleSort.BubbleSortElements();
 
-      if(resultIndex!=-1)
-      Console.WriteLine($"\n The value is found in the array at the index : {resultIndex}");
-      else
-        Console.WriteLine("\n Entered Element is not found in the array");
+      //BinarySearch binarySearch=new BinarySearch(sortedArray);
+      //int resultIndex = binarySearch.BinarySearchValue(valueToSearch);
+      //PrintArrayElements(sortedArray);
 
-      #endregion
+      //if(resultIndex!=-1)
+      //Console.WriteLine($"\n The value is found in the array at the index : {resultIndex}");
+      //else
+      //  Console.WriteLine("\n Entered Element is not found in the array");
+
+      //#endregion
 
       #endregion
 
@@ -46,6 +47,14 @@ namespace Algos
       //BubbleSort bubbleSort = new BubbleSort(inputArrayWithDuplicates);
       //int[] sortedArray = bubbleSort.BubbleSortElements();
       //PrintArrayElements(inputArrayWithDuplicates, sortedArray);
+
+      #endregion
+
+      #region SelectionSort
+
+      SelectionSort selectionSort = new SelectionSort(inputArrayWithDuplicates);
+      int[] sortedArray = selectionSort.SelectionSortElements();
+      PrintArrayElements(inputArrayWithDuplicates, sortedArray);
 
       #endregion
 
