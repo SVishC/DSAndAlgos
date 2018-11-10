@@ -52,12 +52,19 @@ namespace Algos
 
       #region SelectionSort
 
-      SelectionSort selectionSort = new SelectionSort(inputArrayWithDuplicates);
-      int[] sortedArray = selectionSort.SelectionSortElements();
-      PrintArrayElements(inputArrayWithDuplicates, sortedArray);
+      //SelectionSort selectionSort = new SelectionSort(inputArrayWithDuplicates);
+      //int[] sortedArray = selectionSort.SelectionSortElements();
+      //PrintArrayElements(inputArrayWithDuplicates, sortedArray);
 
       #endregion
 
+      #region InsertionSort
+
+      InsertionSort insertionSort = new InsertionSort(inputArrayWithDuplicates);
+      int[] sortedArray = insertionSort.InsertionSortElements();
+      PrintArrayElements(inputArrayWithDuplicates, sortedArray);
+
+      #endregion
 
       #endregion
 

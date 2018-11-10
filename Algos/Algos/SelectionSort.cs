@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Algos
 {
-  class SelectionSort
+  public class SelectionSort
   {
     private int[] InputArray;
     private int[] OutputArray;
