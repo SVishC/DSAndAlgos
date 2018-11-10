@@ -38,6 +38,27 @@ namespace Algos
       return OutputArray;
     }
 
+    public int[] SelectionSortElements2()
+    {
+      InputArray.CopyTo(OutputArray, 0);
+
+      for (int lastUnsortedArrayIndex = OutputArray.Length-1; lastUnsortedArrayIndex > 0; lastUnsortedArrayIndex--)
+      {
+        int largestElementIndex = 0;
+        for (int i = 1; i <= lastUnsortedArrayIndex; i++)
+        {
+          if (OutputArray[i] > OutputArray[largestElementIndex])
+          {
+            largestElementIndex = i;
+          }
+
+          SwapElementsInArray(largestElementIndex, lastUnsortedArrayIndex);
+        }
+      }
+
+      return OutputArray;
+    }
+
     private void SwapElementsInArray(int indexOne, int indexTwo)
     {
       int temp = OutputArray[indexOne];
