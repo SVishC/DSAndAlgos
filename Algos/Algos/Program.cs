@@ -60,8 +60,17 @@ namespace Algos
 
       #region InsertionSort
 
-      InsertionSort insertionSort = new InsertionSort(inputArrayWithDuplicates);
-      int[] sortedArray = insertionSort.InsertionSortElements();
+      //InsertionSort insertionSort = new InsertionSort(inputArrayWithDuplicates);
+      //int[] sortedArray = insertionSort.InsertionSortElements();
+      //PrintArrayElements(inputArrayWithDuplicates, sortedArray);
+
+      #endregion
+
+
+      #region ShellSort
+
+      ShellSort shellSort = new ShellSort(inputArrayWithDuplicates);
+      int[] sortedArray = shellSort.ShellSortElements();
       PrintArrayElements(inputArrayWithDuplicates, sortedArray);
 
       #endregion
